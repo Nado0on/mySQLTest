@@ -139,7 +139,14 @@ DELETE FROM movies
 | Monsters Inc.   |      92 | Animation |        8.1 | G      |
 +-----------------+---------+-----------+------------+--------+
 
+DROP TABLE AND DATABASE - 
+mysql> DROP TABLE movies;
+Query OK, 0 rows affected (0.06 sec)
 
+mysql> DROP DATABASE movies_database;
+ERROR 1008 (HY000): Can't drop database 'movies_database'; database doesn't exist
+mysql> Drop DATABASE  movie_database;
+Query OK, 0 rows affected (0.01 sec)
     
 
 
